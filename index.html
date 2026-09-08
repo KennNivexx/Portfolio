@@ -1,407 +1,496 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ═══════════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════════
        SEO & META — Edit bagian ini sesuai data kamu
        ═══════════════════════════════════════════════════════════ -->
-  <title>Rizky Pratama — Full-Stack Developer</title>
-  <meta name="description" content="Kevin Arkan Efendi, Full-Stack Developer spesialis web modern, UI/UX, dan mobile app." />
-  <meta name="author" content="Kevin Arkan Efendi" />
-  <meta property="og:title" content="Kevin Arkan Efendi — Full-Stack Developer" />
-  <meta property="og:description" content="Portfolio profesional Kevin Arkan Efendi" />
-  <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://Kevin Arkan Efendi.dev" />
+    <title>Rizky Pratama — Full-Stack Developer</title>
+    <meta
+      name="description"
+      content="Kevin Arkan Efendi, Full-Stack Developer spesialis web modern, UI/UX, dan mobile app."
+    />
+    <meta name="author" content="Kevin Arkan Efendi" />
+    <meta
+      property="og:title"
+      content="Kevin Arkan Efendi — Full-Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio profesional Kevin Arkan Efendi"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://Kevin Arkan Efendi.dev" />
 
-  <!-- Favicon emoji fallback -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>" />
+    <!-- Favicon emoji fallback -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>"
+    />
 
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-
-  <!-- ═══ Preloader ════════════════════════════════════════════ -->
-  <div id="preloader">
-    <div class="loader-logo">&lt;RP /&gt;</div>
-    <div class="loader-bar">
-      <div class="loader-bar-fill"></div>
-    </div>
-  </div>
-
-  <!-- ═══ Custom Cursor ════════════════════════════════════════ -->
-  <div id="cursor-dot"></div>
-  <div id="cursor-outline"></div>
-
-  <!-- ═══ Navbar ═══════════════════════════════════════════════ -->
-  <nav id="navbar" aria-label="Navigation utama">
-    <div class="container nav-inner">
-      <!-- ✏️ Ubah logo teks di sini -->
-      <a href="#hero" class="nav-logo">&lt;RP /&gt;</a>
-
-      <ul class="nav-links" role="list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <div class="nav-actions">
-        <button id="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
-        <button id="menu-toggle" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ═══ Preloader ════════════════════════════════════════════ -->
+    <div id="preloader">
+      <div class="loader-logo">&lt;RP /&gt;</div>
+      <div class="loader-bar">
+        <div class="loader-bar-fill"></div>
       </div>
     </div>
-  </nav>
 
-  <!-- Mobile nav -->
-  <nav id="mobile-nav" aria-label="Mobile navigation">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <!-- ═══ Custom Cursor ════════════════════════════════════════ -->
+    <div id="cursor-dot"></div>
+    <div id="cursor-outline"></div>
 
-  <!-- ═══════════════════════════════════════════════════════════
+    <!-- ═══ Navbar ═══════════════════════════════════════════════ -->
+    <nav id="navbar" aria-label="Navigation utama">
+      <div class="container nav-inner">
+        <!-- ✏️ Ubah logo teks di sini -->
+        <a href="#hero" class="nav-logo">&lt;RP /&gt;</a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Toggle dark/light mode">
+            🌙
+          </button>
+          <button id="menu-toggle" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile nav -->
+    <nav id="mobile-nav" aria-label="Mobile navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════════════════
        HERO SECTION
        ─────────────────────────────────────────────────────────
        ✏️ Edit nama, badge, desc, dan social links di sini
        ═══════════════════════════════════════════════════════════ -->
-  <section id="hero">
-    <div class="hero-bg">
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
-      <div class="blob blob-3"></div>
-      <div class="hero-grid"></div>
-    </div>
+    <section id="hero">
+      <div class="hero-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="hero-grid"></div>
+      </div>
 
-    <div class="container">
-      <div class="hero-content">
+      <div class="container">
+        <div class="hero-content">
+          <!-- Status badge -->
+          <div class="hero-badge fade-up">
+            <span class="dot"></span>
+            <!-- ✏️ Ubah status availability -->
+            Available for freelance &amp; full-time
+          </div>
 
-        <!-- Status badge -->
-        <div class="hero-badge fade-up">
-          <span class="dot"></span>
-          <!-- ✏️ Ubah status availability -->
-          Available for freelance &amp; full-time
-        </div>
+          <!-- Nama -->
+          <h1 class="hero-title fade-up delay-1">
+            Hi, I'm <span class="gradient-text">Rizky Pratama</span>
+          </h1>
 
-        <!-- Nama -->
-        <h1 class="hero-title fade-up delay-1">
-          Hi, I'm <span class="gradient-text">Rizky Pratama</span>
-        </h1>
+          <!-- Typed subtitle -->
+          <p class="hero-subtitle fade-up delay-2">
+            <span id="typed-text"></span><span class="typed-cursor"></span>
+          </p>
 
-        <!-- Typed subtitle -->
-        <p class="hero-subtitle fade-up delay-2">
-          <span id="typed-text"></span><span class="typed-cursor"></span>
-        </p>
+          <!-- Deskripsi singkat -->
+          <p class="hero-desc fade-up delay-3">
+            Saya membangun produk digital yang
+            <strong>berfokus pada pengalaman pengguna</strong>, performa tinggi,
+            dan kode yang bersih. Passionate dalam menciptakan solusi inovatif
+            yang memberikan dampak nyata.
+          </p>
 
-        <!-- Deskripsi singkat -->
-        <p class="hero-desc fade-up delay-3">
-          Saya membangun produk digital yang <strong>berfokus pada pengalaman pengguna</strong>,
-          performa tinggi, dan kode yang bersih. Passionate dalam menciptakan solusi inovatif
-          yang memberikan dampak nyata.
-        </p>
+          <!-- CTA Buttons -->
+          <div class="hero-actions fade-up delay-4">
+            <a href="#projects" class="btn btn-primary"> 🚀 Lihat Projects </a>
+            <a href="#contact" class="btn btn-outline"> 📬 Hubungi Saya </a>
+          </div>
 
-        <!-- CTA Buttons -->
-        <div class="hero-actions fade-up delay-4">
-          <a href="#projects" class="btn btn-primary">
-            🚀 Lihat Projects
-          </a>
-          <a href="#contact" class="btn btn-outline">
-            📬 Hubungi Saya
-          </a>
-        </div>
-
-        <!-- Social Links -->
-        <div class="hero-socials fade-up delay-5">
-          <span>// Follow me</span>
-          <!-- ✏️ Ganti href dengan URL sosmed kamu -->
-          <a href="https://github.com/rizkypratama" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-          </a>
-          <a href="https://linkedin.com/in/rizkypratama" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </a>
-          <a href="https://instagram.com/rizkypratama" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-          </a>
-          <a href="mailto:rizky@email.com" class="social-link" aria-label="Email">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
-          </a>
+          <!-- Social Links -->
+          <div class="hero-socials fade-up delay-5">
+            <span>// Follow me</span>
+            <!-- ✏️ Ganti href dengan URL sosmed kamu -->
+            <a
+              href="https://github.com/rizkypratama"
+              class="social-link"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com/in/rizkypratama"
+              class="social-link"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://instagram.com/rizkypratama"
+              class="social-link"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"
+                />
+              </svg>
+            </a>
+            <a
+              href="mailto:rizky@email.com"
+              class="social-link"
+              aria-label="Email"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Scroll hint -->
-    <div class="scroll-hint">
-      <div class="scroll-wheel"></div>
-      <span>scroll</span>
-    </div>
-  </section>
+      <!-- Scroll hint -->
+      <div class="scroll-hint">
+        <div class="scroll-wheel"></div>
+        <span>scroll</span>
+      </div>
+    </section>
 
-  <!-- ═══════════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════════
        ABOUT SECTION
        ─────────────────────────────────────────────────────────
        ✏️ Edit foto, bio, dan info personal di sini
        ═══════════════════════════════════════════════════════════ -->
-  <section id="about" class="section">
-    <div class="container">
-      <div class="about-grid">
-
-        <!-- Photo -->
-        <div class="about-image-wrap fade-left">
-          <div class="about-image-frame">
-            <!-- ✏️ Ganti src dengan foto kamu, atau letakkan foto di assets/ -->
-            <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop"
-              alt="Foto Rizky Pratama"
-              width="500"
-              height="600"
-              loading="lazy"
-            />
-          </div>
-          <!-- Floating badges -->
-          <div class="about-badge about-badge-1">
-            <span class="badge-icon">🏆</span>
-            <div>
-              <div style="font-size:0.72rem;color:var(--clr-muted)">Achievement</div>
-              <div>Top Contributor 2024</div>
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Photo -->
+          <div class="about-image-wrap fade-left">
+            <div class="about-image-frame">
+              <!-- ✏️ Ganti src dengan foto kamu, atau letakkan foto di assets/ -->
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop"
+                alt="Foto Rizky Pratama"
+                width="500"
+                height="600"
+                loading="lazy"
+              />
+            </div>
+            <!-- Floating badges -->
+            <div class="about-badge about-badge-1">
+              <span class="badge-icon">🏆</span>
+              <div>
+                <div style="font-size: 0.72rem; color: var(--clr-muted)">
+                  Achievement
+                </div>
+                <div>Top Contributor 2024</div>
+              </div>
+            </div>
+            <div class="about-badge about-badge-2">
+              <span class="badge-icon">💻</span>
+              <div>
+                <div style="font-size: 0.72rem; color: var(--clr-muted)">
+                  Projects
+                </div>
+                <div>30+ Delivered</div>
+              </div>
             </div>
           </div>
-          <div class="about-badge about-badge-2">
-            <span class="badge-icon">💻</span>
-            <div>
-              <div style="font-size:0.72rem;color:var(--clr-muted)">Projects</div>
-              <div>30+ Delivered</div>
+
+          <!-- Text -->
+          <div class="about-text fade-right">
+            <span class="section-tag">About Me</span>
+            <h2 class="section-title">
+              Passionate Developer &amp; <span>Creative Thinker</span>
+            </h2>
+            <p class="section-desc">
+              <!-- ✏️ Ubah bio kamu di sini -->
+              Halo! Saya <strong>Rizky Pratama</strong>, seorang Full-Stack
+              Developer dengan pengalaman lebih dari 3 tahun membangun aplikasi
+              web dan mobile yang skalabel. Saya sangat peduli terhadap detail,
+              performa, dan pengalaman pengguna yang luar biasa.
+            </p>
+            <p class="section-desc" style="margin-top: 12px">
+              Di luar coding, saya aktif berkontribusi ke open source, menulis
+              artikel teknis, dan berbagi ilmu di komunitas developer lokal.
+              Saya percaya teknologi terbaik adalah yang membuat hidup orang
+              lebih mudah.
+            </p>
+
+            <!-- Info grid -->
+            <div class="about-info">
+              <!-- ✏️ Edit semua nilai info di sini -->
+              <div class="info-item">
+                <div class="info-label">Name</div>
+                <div class="info-value">Rizky Pratama</div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Location</div>
+                <div class="info-value">Jakarta, Indonesia 🇮🇩</div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Email</div>
+                <div class="info-value">rizky@email.com</div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Availability</div>
+                <div class="info-value" style="color: #22c55e">
+                  ● Open to Work
+                </div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Education</div>
+                <div class="info-value">S1 Ilmu Komputer</div>
+              </div>
+              <div class="info-item">
+                <div class="info-label">Experience</div>
+                <div class="info-value">3+ Years</div>
+              </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="fun-facts">
+              <!-- ✏️ Ubah angka dan label -->
+              <div class="fun-fact">
+                <div class="fun-fact-num" data-target="30" data-suffix="+">
+                  0+
+                </div>
+                <div class="fun-fact-label">Projects</div>
+              </div>
+              <div class="fun-fact">
+                <div class="fun-fact-num" data-target="15" data-suffix="+">
+                  0+
+                </div>
+                <div class="fun-fact-label">Clients</div>
+              </div>
+              <div class="fun-fact">
+                <div class="fun-fact-num" data-target="3" data-suffix=" yrs">
+                  0 yrs
+                </div>
+                <div class="fun-fact-label">Experience</div>
+              </div>
+              <div class="fun-fact">
+                <div class="fun-fact-num" data-target="500" data-suffix="+">
+                  0+
+                </div>
+                <div class="fun-fact-label">GitHub Commits</div>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- Text -->
-        <div class="about-text fade-right">
-          <span class="section-tag">About Me</span>
-          <h2 class="section-title">Passionate Developer &amp; <span>Creative Thinker</span></h2>
-          <p class="section-desc">
-            <!-- ✏️ Ubah bio kamu di sini -->
-            Halo! Saya <strong>Rizky Pratama</strong>, seorang Full-Stack Developer dengan pengalaman
-            lebih dari 3 tahun membangun aplikasi web dan mobile yang skalabel. Saya sangat peduli
-            terhadap detail, performa, dan pengalaman pengguna yang luar biasa.
-          </p>
-          <p class="section-desc" style="margin-top:12px">
-            Di luar coding, saya aktif berkontribusi ke open source, menulis artikel teknis, dan
-            berbagi ilmu di komunitas developer lokal. Saya percaya teknologi terbaik adalah yang
-            membuat hidup orang lebih mudah.
-          </p>
-
-          <!-- Info grid -->
-          <div class="about-info">
-            <!-- ✏️ Edit semua nilai info di sini -->
-            <div class="info-item">
-              <div class="info-label">Name</div>
-              <div class="info-value">Rizky Pratama</div>
-            </div>
-            <div class="info-item">
-              <div class="info-label">Location</div>
-              <div class="info-value">Jakarta, Indonesia 🇮🇩</div>
-            </div>
-            <div class="info-item">
-              <div class="info-label">Email</div>
-              <div class="info-value">rizky@email.com</div>
-            </div>
-            <div class="info-item">
-              <div class="info-label">Availability</div>
-              <div class="info-value" style="color:#22C55E">● Open to Work</div>
-            </div>
-            <div class="info-item">
-              <div class="info-label">Education</div>
-              <div class="info-value">S1 Ilmu Komputer</div>
-            </div>
-            <div class="info-item">
-              <div class="info-label">Experience</div>
-              <div class="info-value">3+ Years</div>
-            </div>
-          </div>
-
-          <!-- Stats -->
-          <div class="fun-facts">
-            <!-- ✏️ Ubah angka dan label -->
-            <div class="fun-fact">
-              <div class="fun-fact-num" data-target="30" data-suffix="+">0+</div>
-              <div class="fun-fact-label">Projects</div>
-            </div>
-            <div class="fun-fact">
-              <div class="fun-fact-num" data-target="15" data-suffix="+">0+</div>
-              <div class="fun-fact-label">Clients</div>
-            </div>
-            <div class="fun-fact">
-              <div class="fun-fact-num" data-target="3" data-suffix=" yrs">0 yrs</div>
-              <div class="fun-fact-label">Experience</div>
-            </div>
-            <div class="fun-fact">
-              <div class="fun-fact-num" data-target="500" data-suffix="+">0+</div>
-              <div class="fun-fact-label">GitHub Commits</div>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ═══════════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════════
        SKILLS SECTION
        ─────────────────────────────────────────────────────────
        ✏️ Edit nama skill dan persentase (data-pct) di sini
        ═══════════════════════════════════════════════════════════ -->
-  <section id="skills" class="section">
-    <div class="container">
-      <div class="fade-up">
-        <span class="section-tag">Skills</span>
-        <h2 class="section-title">Tech Stack &amp; <span>Expertise</span></h2>
-        <p class="section-desc">Teknologi yang saya kuasai dan gunakan sehari-hari untuk membangun produk berkualitas tinggi.</p>
-      </div>
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="fade-up">
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">Tech Stack &amp; <span>Expertise</span></h2>
+          <p class="section-desc">
+            Teknologi yang saya kuasai dan gunakan sehari-hari untuk membangun
+            produk berkualitas tinggi.
+          </p>
+        </div>
 
-      <div class="skills-grid">
-
-        <!-- Frontend -->
-        <div class="fade-up delay-1">
-          <div class="skill-category-title"><span class="cat-icon">🎨</span> Frontend</div>
-
-          <!-- ✏️ Edit data-pct untuk mengubah level skill (0-100) -->
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">HTML5 &amp; CSS3</span>
-              <span class="skill-pct">95%</span>
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="fade-up delay-1">
+            <div class="skill-category-title">
+              <span class="cat-icon">🎨</span> Frontend
             </div>
-            <div class="skill-track">
-              <div class="skill-bar" data-pct="95"></div>
+
+            <!-- ✏️ Edit data-pct untuk mengubah level skill (0-100) -->
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">HTML5 &amp; CSS3</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar" data-pct="95"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">JavaScript (ES2024)</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar" data-pct="90"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">React.js / Next.js</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar" data-pct="88"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Vue.js / Nuxt.js</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar" data-pct="75"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">TypeScript</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar" data-pct="82"></div>
+              </div>
             </div>
           </div>
 
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">JavaScript (ES2024)</span>
-              <span class="skill-pct">90%</span>
+          <!-- Backend -->
+          <div class="fade-up delay-2">
+            <div class="skill-category-title">
+              <span class="cat-icon">⚙️</span> Backend &amp; Tools
             </div>
-            <div class="skill-track">
-              <div class="skill-bar" data-pct="90"></div>
-            </div>
-          </div>
 
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">React.js / Next.js</span>
-              <span class="skill-pct">88%</span>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Node.js / Express</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar" data-pct="85"></div>
+              </div>
             </div>
-            <div class="skill-track">
-              <div class="skill-bar" data-pct="88"></div>
-            </div>
-          </div>
 
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Vue.js / Nuxt.js</span>
-              <span class="skill-pct">75%</span>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Python / Django</span>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar" data-pct="78"></div>
+              </div>
             </div>
-            <div class="skill-track">
-              <div class="skill-bar" data-pct="75"></div>
-            </div>
-          </div>
 
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">TypeScript</span>
-              <span class="skill-pct">82%</span>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">PostgreSQL / MySQL</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar" data-pct="80"></div>
+              </div>
             </div>
-            <div class="skill-track">
-              <div class="skill-bar" data-pct="82"></div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Docker / CI/CD</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar" data-pct="70"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Figma / UI Design</span>
+                <span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-track">
+                <div class="skill-bar" data-pct="72"></div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Backend -->
-        <div class="fade-up delay-2">
-          <div class="skill-category-title"><span class="cat-icon">⚙️</span> Backend &amp; Tools</div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Node.js / Express</span>
-              <span class="skill-pct">85%</span>
-            </div>
-            <div class="skill-track">
-              <div class="skill-bar" data-pct="85"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Python / Django</span>
-              <span class="skill-pct">78%</span>
-            </div>
-            <div class="skill-track">
-              <div class="skill-bar" data-pct="78"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">PostgreSQL / MySQL</span>
-              <span class="skill-pct">80%</span>
-            </div>
-            <div class="skill-track">
-              <div class="skill-bar" data-pct="80"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Docker / CI/CD</span>
-              <span class="skill-pct">70%</span>
-            </div>
-            <div class="skill-track">
-              <div class="skill-bar" data-pct="70"></div>
-            </div>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Figma / UI Design</span>
-              <span class="skill-pct">72%</span>
-            </div>
-            <div class="skill-track">
-              <div class="skill-bar" data-pct="72"></div>
-            </div>
-          </div>
+        <!-- Tech pill tags -->
+        <div class="tech-tags fade-up" style="margin-top: 48px">
+          <!-- ✏️ Tambah atau hapus tech tags sesuai keahlian kamu -->
+          <span class="tech-tag">⚛️ React</span>
+          <span class="tech-tag">🟢 Node.js</span>
+          <span class="tech-tag">🐍 Python</span>
+          <span class="tech-tag">🟦 TypeScript</span>
+          <span class="tech-tag">🎨 Figma</span>
+          <span class="tech-tag">🐳 Docker</span>
+          <span class="tech-tag">☁️ AWS</span>
+          <span class="tech-tag">🍃 MongoDB</span>
+          <span class="tech-tag">🐘 PostgreSQL</span>
+          <span class="tech-tag">🔴 Redis</span>
+          <span class="tech-tag">📱 React Native</span>
+          <span class="tech-tag">🌐 Next.js</span>
+          <span class="tech-tag">💨 Tailwind CSS</span>
+          <span class="tech-tag">🔧 Git / GitHub</span>
+          <span class="tech-tag">🚀 Vercel</span>
         </div>
       </div>
+    </section>
 
-      <!-- Tech pill tags -->
-      <div class="tech-tags fade-up" style="margin-top:48px">
-        <!-- ✏️ Tambah atau hapus tech tags sesuai keahlian kamu -->
-        <span class="tech-tag">⚛️ React</span>
-        <span class="tech-tag">🟢 Node.js</span>
-        <span class="tech-tag">🐍 Python</span>
-        <span class="tech-tag">🟦 TypeScript</span>
-        <span class="tech-tag">🎨 Figma</span>
-        <span class="tech-tag">🐳 Docker</span>
-        <span class="tech-tag">☁️ AWS</span>
-        <span class="tech-tag">🍃 MongoDB</span>
-        <span class="tech-tag">🐘 PostgreSQL</span>
-        <span class="tech-tag">🔴 Redis</span>
-        <span class="tech-tag">📱 React Native</span>
-        <span class="tech-tag">🌐 Next.js</span>
-        <span class="tech-tag">💨 Tailwind CSS</span>
-        <span class="tech-tag">🔧 Git / GitHub</span>
-        <span class="tech-tag">🚀 Vercel</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════════
        PROJECTS SECTION
        ─────────────────────────────────────────────────────────
        ✏️ Edit setiap project-card di sini
@@ -416,433 +505,637 @@
          data-github    — URL github repo
          data-img       — URL gambar thumbnail
        ═══════════════════════════════════════════════════════════ -->
-  <section id="projects" class="section">
-    <div class="container">
-      <div class="projects-header">
-        <div class="fade-up">
-          <span class="section-tag">Projects</span>
-          <h2 class="section-title">Karya &amp; <span>Portfolio</span></h2>
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="projects-header">
+          <div class="fade-up">
+            <span class="section-tag">Projects</span>
+            <h2 class="section-title">Karya &amp; <span>Portfolio</span></h2>
+          </div>
+
+          <!-- Filter tabs -->
+          <div class="filter-tabs fade-up delay-2">
+            <button class="filter-tab active" data-filter="all">All</button>
+            <button class="filter-tab" data-filter="web">Web App</button>
+            <button class="filter-tab" data-filter="mobile">Mobile</button>
+            <button class="filter-tab" data-filter="design">UI/UX</button>
+          </div>
         </div>
 
-        <!-- Filter tabs -->
-        <div class="filter-tabs fade-up delay-2">
-          <button class="filter-tab active" data-filter="all">All</button>
-          <button class="filter-tab" data-filter="web">Web App</button>
-          <button class="filter-tab" data-filter="mobile">Mobile</button>
-          <button class="filter-tab" data-filter="design">UI/UX</button>
+        <div class="projects-grid">
+          <!-- ── Project 1 ── -->
+          <article
+            class="project-card fade-up delay-1"
+            data-category="web"
+            data-title="EduTrack — Learning Management System"
+            data-desc="Platform manajemen pembelajaran modern untuk institusi pendidikan."
+            data-long-desc="EduTrack adalah LMS modern yang dibangun dengan Next.js dan Node.js, memungkinkan institusi pendidikan mengelola kursus, siswa, dan progres belajar dalam satu platform terintegrasi. Dilengkapi real-time collaboration dan analytics dashboard."
+            data-stack="Next.js, Node.js, PostgreSQL, Redis, Tailwind CSS, Prisma"
+            data-features="Real-time video streaming|Interactive quizzes dengan AI grading|Progress analytics dashboard|Role-based access control|Mobile-responsive design"
+            data-live="https://edutrack.demo"
+            data-github="https://github.com/rizkypratama/edutrack"
+            data-img="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&auto=format&fit=crop"
+          >
+            <div class="project-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&auto=format&fit=crop"
+                alt="EduTrack"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <button class="overlay-btn view">👁 Detail</button>
+                <a
+                  href="https://github.com/rizkypratama/edutrack"
+                  class="overlay-btn github"
+                  target="_blank"
+                  rel="noopener"
+                  >⌥ Code</a
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Web App</div>
+              <h3 class="project-title">EduTrack — LMS Platform</h3>
+              <p class="project-desc">
+                Platform manajemen pembelajaran modern dengan real-time
+                collaboration dan AI-powered analytics.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">Next.js</span>
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag">PostgreSQL</span>
+                <span class="stack-tag">Redis</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Project 2 ── -->
+          <article
+            class="project-card fade-up delay-2"
+            data-category="mobile"
+            data-title="FinPulse — Personal Finance App"
+            data-desc="Aplikasi mobile untuk tracking keuangan personal dengan AI insights."
+            data-long-desc="FinPulse adalah aplikasi React Native yang membantu pengguna mengelola keuangan personal dengan mudah. Dilengkapi AI-powered insights, kategorisasi otomatis, dan visualisasi data yang interaktif untuk membantu membuat keputusan keuangan lebih cerdas."
+            data-stack="React Native, TypeScript, Node.js, MongoDB, TensorFlow.js"
+            data-features="Kategorisasi transaksi otomatis dengan ML|Budget planning & alerts|Visualisasi spending patterns|Bank account integration|Offline-first architecture"
+            data-live="https://finpulse.demo"
+            data-github="https://github.com/rizkypratama/finpulse"
+            data-img="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop"
+          >
+            <div class="project-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop"
+                alt="FinPulse"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <button class="overlay-btn view">👁 Detail</button>
+                <a
+                  href="https://github.com/rizkypratama/finpulse"
+                  class="overlay-btn github"
+                  target="_blank"
+                  rel="noopener"
+                  >⌥ Code</a
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Mobile App</div>
+              <h3 class="project-title">FinPulse — Finance Tracker</h3>
+              <p class="project-desc">
+                Aplikasi keuangan personal dengan AI insights dan kategorisasi
+                transaksi otomatis.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">React Native</span>
+                <span class="stack-tag">TypeScript</span>
+                <span class="stack-tag">MongoDB</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Project 3 ── -->
+          <article
+            class="project-card fade-up delay-3"
+            data-category="web"
+            data-title="ShopNest — E-Commerce Platform"
+            data-desc="Platform e-commerce full-stack dengan fitur real-time inventory."
+            data-long-desc="ShopNest adalah platform e-commerce modern yang dibangun menggunakan React dan Django. Menampilkan fitur real-time inventory management, payment gateway terintegrasi, dan dashboard analytics yang komprehensif untuk para merchant."
+            data-stack="React, Django, PostgreSQL, Stripe, Redis, Celery"
+            data-features="Real-time inventory management|Stripe payment integration|Multi-vendor support|Advanced search & filtering|Order tracking system|Admin analytics dashboard"
+            data-live="https://shopnest.demo"
+            data-github="https://github.com/rizkypratama/shopnest"
+            data-img="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop"
+          >
+            <div class="project-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop"
+                alt="ShopNest"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <button class="overlay-btn view">👁 Detail</button>
+                <a
+                  href="https://github.com/rizkypratama/shopnest"
+                  class="overlay-btn github"
+                  target="_blank"
+                  rel="noopener"
+                  >⌥ Code</a
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Web App</div>
+              <h3 class="project-title">ShopNest — E-Commerce</h3>
+              <p class="project-desc">
+                Platform e-commerce full-stack dengan real-time inventory dan
+                Stripe payment.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">Django</span>
+                <span class="stack-tag">Stripe</span>
+                <span class="stack-tag">Redis</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Project 4 ── -->
+          <article
+            class="project-card fade-up delay-4"
+            data-category="design"
+            data-title="MedAI — Healthcare App Design"
+            data-desc="UI/UX design untuk aplikasi kesehatan berbasis AI."
+            data-long-desc="MedAI adalah proyek desain komprehensif untuk platform kesehatan berbasis AI. Meliputi user research, wireframing, prototyping, dan high-fidelity design system yang berfokus pada aksesibilitas dan kemudahan penggunaan untuk semua kalangan usia."
+            data-stack="Figma, Adobe XD, Principle, Zeplin"
+            data-features="User research & persona development|Accessibility-first design|Comprehensive design system|Interactive prototyping|Handoff documentation"
+            data-live="https://figma.com/medai"
+            data-github=""
+            data-img="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&auto=format&fit=crop"
+          >
+            <div class="project-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&auto=format&fit=crop"
+                alt="MedAI Design"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <button class="overlay-btn view">👁 Detail</button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">UI/UX Design</div>
+              <h3 class="project-title">MedAI — Healthcare Design</h3>
+              <p class="project-desc">
+                Comprehensive UI/UX design system untuk aplikasi healthcare
+                berbasis AI.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">Figma</span>
+                <span class="stack-tag">Design System</span>
+                <span class="stack-tag">Prototyping</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Project 5 ── -->
+          <article
+            class="project-card fade-up delay-5"
+            data-category="web"
+            data-title="DevCollab — Real-Time Coding Platform"
+            data-desc="Platform coding kolaboratif real-time seperti Google Docs untuk code."
+            data-long-desc="DevCollab memungkinkan developer untuk coding bersama secara real-time dalam satu environment yang terintegrasi. Dilengkapi syntax highlighting untuk 50+ bahasa, video chat, whiteboard virtual, dan code execution environment yang aman."
+            data-stack="React, Socket.io, Node.js, Monaco Editor, WebRTC, Docker"
+            data-features="Real-time collaborative editing|50+ programming language support|Integrated video chat|Code execution sandbox|Git integration|Session recording"
+            data-live="https://devcollab.demo"
+            data-github="https://github.com/rizkypratama/devcollab"
+            data-img="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&auto=format&fit=crop"
+          >
+            <div class="project-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&auto=format&fit=crop"
+                alt="DevCollab"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <button class="overlay-btn view">👁 Detail</button>
+                <a
+                  href="https://github.com/rizkypratama/devcollab"
+                  class="overlay-btn github"
+                  target="_blank"
+                  rel="noopener"
+                  >⌥ Code</a
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Web App</div>
+              <h3 class="project-title">DevCollab — Coding Platform</h3>
+              <p class="project-desc">
+                Real-time collaborative coding platform dengan video chat dan
+                code execution.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">React</span>
+                <span class="stack-tag">Socket.io</span>
+                <span class="stack-tag">WebRTC</span>
+                <span class="stack-tag">Docker</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Project 6 ── -->
+          <article
+            class="project-card fade-up delay-6"
+            data-category="mobile"
+            data-title="FitPath — Fitness Tracking App"
+            data-desc="Aplikasi fitness tracker dengan AI-powered workout recommendations."
+            data-long-desc="FitPath adalah aplikasi fitness mobile yang menggunakan computer vision untuk menganalisis form latihan pengguna dan memberikan rekomendasi workout yang dipersonalisasi berdasarkan kemampuan dan tujuan mereka. Dilengkapi sensor integration dan social challenges."
+            data-stack="Flutter, Dart, TensorFlow Lite, Firebase, Python"
+            data-features="AI form analysis using camera|Personalized workout plans|Nutrition tracking & meal planning|Social challenges & leaderboard|Wearable device integration"
+            data-live="https://fitpath.demo"
+            data-github="https://github.com/rizkypratama/fitpath"
+            data-img="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&auto=format&fit=crop"
+          >
+            <div class="project-thumb">
+              <img
+                src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&auto=format&fit=crop"
+                alt="FitPath"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <button class="overlay-btn view">👁 Detail</button>
+                <a
+                  href="https://github.com/rizkypratama/fitpath"
+                  class="overlay-btn github"
+                  target="_blank"
+                  rel="noopener"
+                  >⌥ Code</a
+                >
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-category">Mobile App</div>
+              <h3 class="project-title">FitPath — Fitness Tracker</h3>
+              <p class="project-desc">
+                Fitness app dengan AI form analysis dan personalized workout
+                recommendations.
+              </p>
+              <div class="project-stack">
+                <span class="stack-tag">Flutter</span>
+                <span class="stack-tag">TensorFlow Lite</span>
+                <span class="stack-tag">Firebase</span>
+              </div>
+            </div>
+          </article>
         </div>
+        <!-- /projects-grid -->
       </div>
+    </section>
 
-      <div class="projects-grid">
-
-        <!-- ── Project 1 ── -->
-        <article class="project-card fade-up delay-1"
-          data-category="web"
-          data-title="EduTrack — Learning Management System"
-          data-desc="Platform manajemen pembelajaran modern untuk institusi pendidikan."
-          data-long-desc="EduTrack adalah LMS modern yang dibangun dengan Next.js dan Node.js, memungkinkan institusi pendidikan mengelola kursus, siswa, dan progres belajar dalam satu platform terintegrasi. Dilengkapi real-time collaboration dan analytics dashboard."
-          data-stack="Next.js, Node.js, PostgreSQL, Redis, Tailwind CSS, Prisma"
-          data-features="Real-time video streaming|Interactive quizzes dengan AI grading|Progress analytics dashboard|Role-based access control|Mobile-responsive design"
-          data-live="https://edutrack.demo"
-          data-github="https://github.com/rizkypratama/edutrack"
-          data-img="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&auto=format&fit=crop"
-        >
-          <div class="project-thumb">
-            <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&auto=format&fit=crop" alt="EduTrack" loading="lazy" />
-            <div class="project-overlay">
-              <button class="overlay-btn view">👁 Detail</button>
-              <a href="https://github.com/rizkypratama/edutrack" class="overlay-btn github" target="_blank" rel="noopener">⌥ Code</a>
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-category">Web App</div>
-            <h3 class="project-title">EduTrack — LMS Platform</h3>
-            <p class="project-desc">Platform manajemen pembelajaran modern dengan real-time collaboration dan AI-powered analytics.</p>
-            <div class="project-stack">
-              <span class="stack-tag">Next.js</span>
-              <span class="stack-tag">Node.js</span>
-              <span class="stack-tag">PostgreSQL</span>
-              <span class="stack-tag">Redis</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ── Project 2 ── -->
-        <article class="project-card fade-up delay-2"
-          data-category="mobile"
-          data-title="FinPulse — Personal Finance App"
-          data-desc="Aplikasi mobile untuk tracking keuangan personal dengan AI insights."
-          data-long-desc="FinPulse adalah aplikasi React Native yang membantu pengguna mengelola keuangan personal dengan mudah. Dilengkapi AI-powered insights, kategorisasi otomatis, dan visualisasi data yang interaktif untuk membantu membuat keputusan keuangan lebih cerdas."
-          data-stack="React Native, TypeScript, Node.js, MongoDB, TensorFlow.js"
-          data-features="Kategorisasi transaksi otomatis dengan ML|Budget planning & alerts|Visualisasi spending patterns|Bank account integration|Offline-first architecture"
-          data-live="https://finpulse.demo"
-          data-github="https://github.com/rizkypratama/finpulse"
-          data-img="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop"
-        >
-          <div class="project-thumb">
-            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop" alt="FinPulse" loading="lazy" />
-            <div class="project-overlay">
-              <button class="overlay-btn view">👁 Detail</button>
-              <a href="https://github.com/rizkypratama/finpulse" class="overlay-btn github" target="_blank" rel="noopener">⌥ Code</a>
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-category">Mobile App</div>
-            <h3 class="project-title">FinPulse — Finance Tracker</h3>
-            <p class="project-desc">Aplikasi keuangan personal dengan AI insights dan kategorisasi transaksi otomatis.</p>
-            <div class="project-stack">
-              <span class="stack-tag">React Native</span>
-              <span class="stack-tag">TypeScript</span>
-              <span class="stack-tag">MongoDB</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ── Project 3 ── -->
-        <article class="project-card fade-up delay-3"
-          data-category="web"
-          data-title="ShopNest — E-Commerce Platform"
-          data-desc="Platform e-commerce full-stack dengan fitur real-time inventory."
-          data-long-desc="ShopNest adalah platform e-commerce modern yang dibangun menggunakan React dan Django. Menampilkan fitur real-time inventory management, payment gateway terintegrasi, dan dashboard analytics yang komprehensif untuk para merchant."
-          data-stack="React, Django, PostgreSQL, Stripe, Redis, Celery"
-          data-features="Real-time inventory management|Stripe payment integration|Multi-vendor support|Advanced search & filtering|Order tracking system|Admin analytics dashboard"
-          data-live="https://shopnest.demo"
-          data-github="https://github.com/rizkypratama/shopnest"
-          data-img="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop"
-        >
-          <div class="project-thumb">
-            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&auto=format&fit=crop" alt="ShopNest" loading="lazy" />
-            <div class="project-overlay">
-              <button class="overlay-btn view">👁 Detail</button>
-              <a href="https://github.com/rizkypratama/shopnest" class="overlay-btn github" target="_blank" rel="noopener">⌥ Code</a>
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-category">Web App</div>
-            <h3 class="project-title">ShopNest — E-Commerce</h3>
-            <p class="project-desc">Platform e-commerce full-stack dengan real-time inventory dan Stripe payment.</p>
-            <div class="project-stack">
-              <span class="stack-tag">React</span>
-              <span class="stack-tag">Django</span>
-              <span class="stack-tag">Stripe</span>
-              <span class="stack-tag">Redis</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ── Project 4 ── -->
-        <article class="project-card fade-up delay-4"
-          data-category="design"
-          data-title="MedAI — Healthcare App Design"
-          data-desc="UI/UX design untuk aplikasi kesehatan berbasis AI."
-          data-long-desc="MedAI adalah proyek desain komprehensif untuk platform kesehatan berbasis AI. Meliputi user research, wireframing, prototyping, dan high-fidelity design system yang berfokus pada aksesibilitas dan kemudahan penggunaan untuk semua kalangan usia."
-          data-stack="Figma, Adobe XD, Principle, Zeplin"
-          data-features="User research & persona development|Accessibility-first design|Comprehensive design system|Interactive prototyping|Handoff documentation"
-          data-live="https://figma.com/medai"
-          data-github=""
-          data-img="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&auto=format&fit=crop"
-        >
-          <div class="project-thumb">
-            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&auto=format&fit=crop" alt="MedAI Design" loading="lazy" />
-            <div class="project-overlay">
-              <button class="overlay-btn view">👁 Detail</button>
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-category">UI/UX Design</div>
-            <h3 class="project-title">MedAI — Healthcare Design</h3>
-            <p class="project-desc">Comprehensive UI/UX design system untuk aplikasi healthcare berbasis AI.</p>
-            <div class="project-stack">
-              <span class="stack-tag">Figma</span>
-              <span class="stack-tag">Design System</span>
-              <span class="stack-tag">Prototyping</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ── Project 5 ── -->
-        <article class="project-card fade-up delay-5"
-          data-category="web"
-          data-title="DevCollab — Real-Time Coding Platform"
-          data-desc="Platform coding kolaboratif real-time seperti Google Docs untuk code."
-          data-long-desc="DevCollab memungkinkan developer untuk coding bersama secara real-time dalam satu environment yang terintegrasi. Dilengkapi syntax highlighting untuk 50+ bahasa, video chat, whiteboard virtual, dan code execution environment yang aman."
-          data-stack="React, Socket.io, Node.js, Monaco Editor, WebRTC, Docker"
-          data-features="Real-time collaborative editing|50+ programming language support|Integrated video chat|Code execution sandbox|Git integration|Session recording"
-          data-live="https://devcollab.demo"
-          data-github="https://github.com/rizkypratama/devcollab"
-          data-img="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&auto=format&fit=crop"
-        >
-          <div class="project-thumb">
-            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&auto=format&fit=crop" alt="DevCollab" loading="lazy" />
-            <div class="project-overlay">
-              <button class="overlay-btn view">👁 Detail</button>
-              <a href="https://github.com/rizkypratama/devcollab" class="overlay-btn github" target="_blank" rel="noopener">⌥ Code</a>
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-category">Web App</div>
-            <h3 class="project-title">DevCollab — Coding Platform</h3>
-            <p class="project-desc">Real-time collaborative coding platform dengan video chat dan code execution.</p>
-            <div class="project-stack">
-              <span class="stack-tag">React</span>
-              <span class="stack-tag">Socket.io</span>
-              <span class="stack-tag">WebRTC</span>
-              <span class="stack-tag">Docker</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- ── Project 6 ── -->
-        <article class="project-card fade-up delay-6"
-          data-category="mobile"
-          data-title="FitPath — Fitness Tracking App"
-          data-desc="Aplikasi fitness tracker dengan AI-powered workout recommendations."
-          data-long-desc="FitPath adalah aplikasi fitness mobile yang menggunakan computer vision untuk menganalisis form latihan pengguna dan memberikan rekomendasi workout yang dipersonalisasi berdasarkan kemampuan dan tujuan mereka. Dilengkapi sensor integration dan social challenges."
-          data-stack="Flutter, Dart, TensorFlow Lite, Firebase, Python"
-          data-features="AI form analysis using camera|Personalized workout plans|Nutrition tracking & meal planning|Social challenges & leaderboard|Wearable device integration"
-          data-live="https://fitpath.demo"
-          data-github="https://github.com/rizkypratama/fitpath"
-          data-img="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&auto=format&fit=crop"
-        >
-          <div class="project-thumb">
-            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600&auto=format&fit=crop" alt="FitPath" loading="lazy" />
-            <div class="project-overlay">
-              <button class="overlay-btn view">👁 Detail</button>
-              <a href="https://github.com/rizkypratama/fitpath" class="overlay-btn github" target="_blank" rel="noopener">⌥ Code</a>
-            </div>
-          </div>
-          <div class="project-body">
-            <div class="project-category">Mobile App</div>
-            <h3 class="project-title">FitPath — Fitness Tracker</h3>
-            <p class="project-desc">Fitness app dengan AI form analysis dan personalized workout recommendations.</p>
-            <div class="project-stack">
-              <span class="stack-tag">Flutter</span>
-              <span class="stack-tag">TensorFlow Lite</span>
-              <span class="stack-tag">Firebase</span>
-            </div>
-          </div>
-        </article>
-
-      </div><!-- /projects-grid -->
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════════
        EXPERIENCE SECTION
        ─────────────────────────────────────────────────────────
        ✏️ Edit timeline-item untuk menambah/edit pengalaman
        ═══════════════════════════════════════════════════════════ -->
-  <section id="experience" class="section">
-    <div class="container">
-      <div class="fade-up">
-        <span class="section-tag">Experience</span>
-        <h2 class="section-title">Perjalanan <span>Karir</span></h2>
-        <p class="section-desc">Pengalaman profesional saya dalam membangun produk digital berdampak tinggi.</p>
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="fade-up">
+          <span class="section-tag">Experience</span>
+          <h2 class="section-title">Perjalanan <span>Karir</span></h2>
+          <p class="section-desc">
+            Pengalaman profesional saya dalam membangun produk digital berdampak
+            tinggi.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <!-- ── Experience 1 ── -->
+          <div class="timeline-item fade-left delay-1">
+            <div class="timeline-date">Jan 2024 — Present</div>
+            <div class="timeline-card">
+              <div class="timeline-role">Senior Full-Stack Developer</div>
+              <!-- ✏️ Ubah nama perusahaan -->
+              <div class="timeline-company">
+                🏢 TechNova Indonesia • Jakarta, ID
+              </div>
+              <div class="timeline-desc">
+                <ul>
+                  <li>
+                    Memimpin tim 5 developer untuk membangun platform SaaS B2B
+                    dengan 10.000+ pengguna aktif
+                  </li>
+                  <li>
+                    Mengarsitektur microservices yang meningkatkan performa 40%
+                    dan mengurangi downtime 90%
+                  </li>
+                  <li>
+                    Implementasi CI/CD pipeline dan code review culture yang
+                    meningkatkan velocity tim 2x
+                  </li>
+                  <li>
+                    Mentoring 3 junior developer dan menjalankan weekly
+                    knowledge-sharing sessions
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Experience 2 ── -->
+          <div class="timeline-item fade-left delay-2">
+            <div class="timeline-date">Jun 2022 — Dec 2023</div>
+            <div class="timeline-card">
+              <div class="timeline-role">Full-Stack Developer</div>
+              <div class="timeline-company">🚀 Startup.id • Jakarta, ID</div>
+              <div class="timeline-desc">
+                <ul>
+                  <li>
+                    Membangun fitur-fitur core platform marketplace dari 0
+                    hingga 50.000 transaksi/bulan
+                  </li>
+                  <li>
+                    Integrasi payment gateway (Midtrans, Xendit) dengan success
+                    rate 99.7%
+                  </li>
+                  <li>
+                    Optimasi database query yang mengurangi load time 60% di
+                    halaman-halaman kritis
+                  </li>
+                  <li>
+                    Berkolaborasi dengan tim design untuk memastikan konsistensi
+                    UI/UX di semua platform
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Experience 3 ── -->
+          <div class="timeline-item fade-left delay-3">
+            <div class="timeline-date">Jan 2022 — May 2022</div>
+            <div class="timeline-card">
+              <div class="timeline-role">Frontend Developer (Intern)</div>
+              <div class="timeline-company">
+                💼 Digital Agency XYZ • Jakarta, ID
+              </div>
+              <div class="timeline-desc">
+                <ul>
+                  <li>
+                    Mengembangkan UI komponen library yang digunakan di 5+
+                    proyek klien besar
+                  </li>
+                  <li>
+                    Berpartisipasi dalam design review dan user testing sessions
+                  </li>
+                  <li>
+                    Menyelesaikan 15+ ticket bug fix dan feature request selama
+                    periode magang
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ── Education ── -->
+          <div class="timeline-item fade-left delay-4">
+            <div class="timeline-date">2018 — 2022</div>
+            <div class="timeline-card">
+              <div class="timeline-role">S1 Ilmu Komputer</div>
+              <div class="timeline-company">
+                🎓 Universitas Indonesia • Depok, ID
+              </div>
+              <div class="timeline-desc">
+                <ul>
+                  <li>IPK: 3.82 / 4.00 — Cumlaude</li>
+                  <li>
+                    Skripsi: "Penerapan Machine Learning untuk Deteksi Anomali
+                    Jaringan"
+                  </li>
+                  <li>
+                    Ketua Divisi IT Himpunan Mahasiswa Ilmu Komputer 2020-2021
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="timeline">
-
-        <!-- ── Experience 1 ── -->
-        <div class="timeline-item fade-left delay-1">
-          <div class="timeline-date">Jan 2024 — Present</div>
-          <div class="timeline-card">
-            <div class="timeline-role">Senior Full-Stack Developer</div>
-            <!-- ✏️ Ubah nama perusahaan -->
-            <div class="timeline-company">🏢 TechNova Indonesia • Jakarta, ID</div>
-            <div class="timeline-desc">
-              <ul>
-                <li>Memimpin tim 5 developer untuk membangun platform SaaS B2B dengan 10.000+ pengguna aktif</li>
-                <li>Mengarsitektur microservices yang meningkatkan performa 40% dan mengurangi downtime 90%</li>
-                <li>Implementasi CI/CD pipeline dan code review culture yang meningkatkan velocity tim 2x</li>
-                <li>Mentoring 3 junior developer dan menjalankan weekly knowledge-sharing sessions</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- ── Experience 2 ── -->
-        <div class="timeline-item fade-left delay-2">
-          <div class="timeline-date">Jun 2022 — Dec 2023</div>
-          <div class="timeline-card">
-            <div class="timeline-role">Full-Stack Developer</div>
-            <div class="timeline-company">🚀 Startup.id • Jakarta, ID</div>
-            <div class="timeline-desc">
-              <ul>
-                <li>Membangun fitur-fitur core platform marketplace dari 0 hingga 50.000 transaksi/bulan</li>
-                <li>Integrasi payment gateway (Midtrans, Xendit) dengan success rate 99.7%</li>
-                <li>Optimasi database query yang mengurangi load time 60% di halaman-halaman kritis</li>
-                <li>Berkolaborasi dengan tim design untuk memastikan konsistensi UI/UX di semua platform</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- ── Experience 3 ── -->
-        <div class="timeline-item fade-left delay-3">
-          <div class="timeline-date">Jan 2022 — May 2022</div>
-          <div class="timeline-card">
-            <div class="timeline-role">Frontend Developer (Intern)</div>
-            <div class="timeline-company">💼 Digital Agency XYZ • Jakarta, ID</div>
-            <div class="timeline-desc">
-              <ul>
-                <li>Mengembangkan UI komponen library yang digunakan di 5+ proyek klien besar</li>
-                <li>Berpartisipasi dalam design review dan user testing sessions</li>
-                <li>Menyelesaikan 15+ ticket bug fix dan feature request selama periode magang</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- ── Education ── -->
-        <div class="timeline-item fade-left delay-4">
-          <div class="timeline-date">2018 — 2022</div>
-          <div class="timeline-card">
-            <div class="timeline-role">S1 Ilmu Komputer</div>
-            <div class="timeline-company">🎓 Universitas Indonesia • Depok, ID</div>
-            <div class="timeline-desc">
-              <ul>
-                <li>IPK: 3.82 / 4.00 — Cumlaude</li>
-                <li>Skripsi: "Penerapan Machine Learning untuk Deteksi Anomali Jaringan"</li>
-                <li>Ketua Divisi IT Himpunan Mahasiswa Ilmu Komputer 2020-2021</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════════════════════════════
+    <!-- ═══════════════════════════════════════════════════════════
        CONTACT SECTION
        ─────────────────────────────────────────────────────────
        ✏️ Edit info kontak dan social links di sini
        ═══════════════════════════════════════════════════════════ -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="fade-up" style="text-align:center;max-width:600px;margin-inline:auto;">
-        <span class="section-tag">Contact</span>
-        <h2 class="section-title">Mari <span>Berkolaborasi</span></h2>
-        <p class="section-desc" style="max-width:100%">
-          Punya project menarik atau ingin berdiskusi? Saya selalu terbuka untuk peluang baru dan kolaborasi yang bermakna.
-        </p>
-      </div>
-
-      <div class="contact-grid">
-
-        <!-- Contact cards -->
-        <div class="contact-info-cards fade-left">
-          <!-- ✏️ Edit nilai kontak di sini -->
-          <div class="contact-card">
-            <div class="contact-icon">📧</div>
-            <div>
-              <div class="contact-label">Email</div>
-              <div class="contact-value">rizky@email.com</div>
-            </div>
-          </div>
-          <div class="contact-card">
-            <div class="contact-icon">📱</div>
-            <div>
-              <div class="contact-label">WhatsApp</div>
-              <div class="contact-value">+62 812-3456-7890</div>
-            </div>
-          </div>
-          <div class="contact-card">
-            <div class="contact-icon">📍</div>
-            <div>
-              <div class="contact-label">Location</div>
-              <div class="contact-value">Jakarta, Indonesia</div>
-            </div>
-          </div>
-          <div class="contact-card">
-            <div class="contact-icon">⏰</div>
-            <div>
-              <div class="contact-label">Response Time</div>
-              <div class="contact-value">Within 24 hours</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- CTA box -->
-        <div class="contact-cta fade-right">
-          <div class="cta-title">Siap untuk mulai?</div>
-          <p class="cta-desc">
-            Saya terbuka untuk peluang <strong>freelance, full-time,</strong> dan <strong>kolaborasi project</strong>.
-            Jangan ragu untuk reach out — mari kita buat sesuatu yang luar biasa bersama!
+    <section id="contact" class="section">
+      <div class="container">
+        <div
+          class="fade-up"
+          style="text-align: center; max-width: 600px; margin-inline: auto"
+        >
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Mari <span>Berkolaborasi</span></h2>
+          <p class="section-desc" style="max-width: 100%">
+            Punya project menarik atau ingin berdiskusi? Saya selalu terbuka
+            untuk peluang baru dan kolaborasi yang bermakna.
           </p>
-          <!-- ✏️ Edit href dengan URL sosmed kamu -->
-          <div class="cta-socials">
-            <a href="https://linkedin.com/in/rizkypratama" class="cta-social-btn" target="_blank" rel="noopener">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              LinkedIn
-            </a>
-            <a href="https://github.com/rizkypratama" class="cta-social-btn" target="_blank" rel="noopener">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-              GitHub
-            </a>
-            <a href="mailto:rizky@email.com" class="cta-social-btn">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
-              Send Email
-            </a>
-            <a href="https://wa.me/6281234567890" class="cta-social-btn" target="_blank" rel="noopener">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-              WhatsApp
-            </a>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact cards -->
+          <div class="contact-info-cards fade-left">
+            <!-- ✏️ Edit nilai kontak di sini -->
+            <div class="contact-card">
+              <div class="contact-icon">📧</div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">rizky@email.com</div>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">📱</div>
+              <div>
+                <div class="contact-label">WhatsApp</div>
+                <div class="contact-value">+62 812-3456-7890</div>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-value">Jakarta, Indonesia</div>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="contact-icon">⏰</div>
+              <div>
+                <div class="contact-label">Response Time</div>
+                <div class="contact-value">Within 24 hours</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA box -->
+          <div class="contact-cta fade-right">
+            <div class="cta-title">Siap untuk mulai?</div>
+            <p class="cta-desc">
+              Saya terbuka untuk peluang
+              <strong>freelance, full-time,</strong> dan
+              <strong>kolaborasi project</strong>. Jangan ragu untuk reach out —
+              mari kita buat sesuatu yang luar biasa bersama!
+            </p>
+            <!-- ✏️ Edit href dengan URL sosmed kamu -->
+            <div class="cta-socials">
+              <a
+                href="https://linkedin.com/in/rizkypratama"
+                class="cta-social-btn"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+                LinkedIn
+              </a>
+              <a
+                href="https://github.com/rizkypratama"
+                class="cta-social-btn"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+                GitHub
+              </a>
+              <a href="mailto:rizky@email.com" class="cta-social-btn">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+                  />
+                </svg>
+                Send Email
+              </a>
+              <a
+                href="https://wa.me/6281234567890"
+                class="cta-social-btn"
+                target="_blank"
+                rel="noopener"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+                  />
+                </svg>
+                WhatsApp
+              </a>
+            </div>
           </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ═══ Footer ════════════════════════════════════════════════ -->
-  <footer id="footer">
-    <div class="container footer-inner">
-      <div class="footer-logo">&lt;RP /&gt;</div>
-      <p class="footer-copy">
-        <!-- ✏️ Ubah nama dan tahun -->
-        © 2026 Rizky Pratama. Dibuat dengan ❤️ menggunakan HTML, CSS &amp; JS.
-      </p>
-      <div class="footer-links">
-        <a href="#hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ═══ Back to Top ═══════════════════════════════════════════ -->
-  <button id="back-top" aria-label="Kembali ke atas">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M18 15l-6-6-6 6"/>
-    </svg>
-  </button>
-
-  <!-- ═══ Project Modal ══════════════════════════════════════════ -->
-  <div id="modal-overlay" role="dialog" aria-modal="true" aria-label="Project detail">
-    <div class="modal-box">
-      <button class="modal-close" aria-label="Tutup modal">✕</button>
-      <div class="modal-img">
-        <img src="" alt="Project preview" />
-      </div>
-      <div class="modal-body">
-        <div class="modal-category"></div>
-        <h3 class="modal-title"></h3>
-        <p class="modal-desc"></p>
-        <div class="modal-features">
-          <h4>✨ Key Features</h4>
-          <ul></ul>
-        </div>
-        <div class="modal-stack"></div>
-        <div class="modal-actions">
-          <a id="modal-live" href="#" target="_blank" rel="noopener" class="btn btn-primary">🚀 Live Demo</a>
-          <a id="modal-github" href="#" target="_blank" rel="noopener" class="btn btn-outline">⌥ View Code</a>
+    <!-- ═══ Footer ════════════════════════════════════════════════ -->
+    <footer id="footer">
+      <div class="container footer-inner">
+        <div class="footer-logo">&lt;RP /&gt;</div>
+        <p class="footer-copy">
+          <!-- ✏️ Ubah nama dan tahun -->
+          © 2026 Rizky Pratama. Dibuat dengan ❤️ menggunakan HTML, CSS &amp; JS.
+        </p>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
-    </div>
-  </div>
+    </footer>
 
-  <script src="js/main.js"></script>
-</body>
+    <!-- ═══ Back to Top ═══════════════════════════════════════════ -->
+    <button id="back-top" aria-label="Kembali ke atas">
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
+    </button>
+
+    <!-- ═══ Project Modal ══════════════════════════════════════════ -->
+    <div
+      id="modal-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Project detail"
+    >
+      <div class="modal-box">
+        <button class="modal-close" aria-label="Tutup modal">✕</button>
+        <div class="modal-img">
+          <img src="" alt="Project preview" />
+        </div>
+        <div class="modal-body">
+          <div class="modal-category"></div>
+          <h3 class="modal-title"></h3>
+          <p class="modal-desc"></p>
+          <div class="modal-features">
+            <h4>✨ Key Features</h4>
+            <ul></ul>
+          </div>
+          <div class="modal-stack"></div>
+          <div class="modal-actions">
+            <a
+              id="modal-live"
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary"
+              >🚀 Live Demo</a
+            >
+            <a
+              id="modal-github"
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-outline"
+              >⌥ View Code</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
